@@ -3,6 +3,20 @@
     padding: 0px;
 }
 
+.row.logo-footer-last a {
+    color: white;
+}
+
+.row.logo-footer-last a:hover {
+    font-size: 50px;
+    color: #f3971c;
+}
+
+.col-sm-4.img-content-4:hover img {
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+
 .row.footer-last {
     height: 60px;
     line-height: 60px;
@@ -14,7 +28,7 @@
 }
 hr{
     border-top: 2px solid #ffcc4f;
-    width: 100px;
+    max-width: 100px;
 }
 
 .carousel-caption hr {margin: auto;margin-bottom: 20px;}
@@ -23,6 +37,7 @@ hr{
     background-size: cover;
     color: white;
     padding-top: 60px;
+    max-height: 500px;
 }
 .row.logo-footer-last i {
     font-size: 20pt;
@@ -80,9 +95,10 @@ img#logo-footer {
 }
 
 .row.yeucau-content-4 {
-    height: 100px;
+    max-height: 100px;
     line-height: 100px;
 }
+
 
 .row.yeucau-content-4 {
     background: #ffcc4f;
@@ -97,9 +113,10 @@ img#logo-footer {
 .row.title-content-4 h3 {margin-bottom: 35px;margin-top: 75px;margin-left: 40%;font-weight: bold;}
 
 .col-sm-4.img-content-4 img {
-    width: 355px;
+    max-width: 355px;
     height: 297px;
     margin-bottom: 21px;
+    opacity: 1;
 }
 
 .carousel-caption {
@@ -169,6 +186,13 @@ img#logo-footer {
 
 .row.menu-content-2 img {
     margin-right: 10px;
+    border: 3px solid #544f4f;
+    border-radius: 6px;
+}
+
+img.img-ct2:hover {
+    border: 3px solid rgba(56, 51, 51, 0.74);
+    border-radius: 7px;
 }
 
 .row.menu-content-2 ul li {
@@ -177,7 +201,7 @@ img#logo-footer {
 
 .row.img-right-content-2 {
     padding: 5px;
-    width: 522px;
+    max-width: 522px;
     border: 1px solid #c5b5b5;
     margin-bottom: 30px;
 }
@@ -194,7 +218,7 @@ img#logo-footer {
     padding-left: 80px;
     padding-right: 93px;
     padding-bottom: 20px;
-    width: 100px !important;
+    max-width: 100px !important;
 }
 
 .row.title-content-1.text-sm-center {
@@ -301,4 +325,64 @@ i.fa.fa-phone.icon-phone-top {
     height: 51px;
     background: #ffcc4f;
     line-height: 51px;
+}
+@media (max-width: 575px){
+    .row.description-content-1{
+        margin:auto
+    }
+    #nav-menu-top a.navbar-brand{
+        padding-left:0px;
+        padding-top:20px;
+    }
+    button.navbar-toggler.navbar-toggler-right.collapsed{
+        margin-top:20px;
+    }
+    button.navbar-toggler.navbar-toggler-right{
+        margin-top:20px;
+    }
+    div#navbarSupportedContent{
+        margin-top:26px;
+    }
+    div#navbarSupportedContent ul{
+        background:#5bc0de;
+        width: 105%;
+    }
+    .card{
+        margin-bottom: 5px;
+    }
+    .row.img-right-content-2 img{
+        width:100%;
+    }
+    .col-sm-6.menu-ct-2-2{
+        margin-top: -261px;
+        margin-left: 202px;
+    }
+    .row.list-img-content-4-{
+        margin-left: -45px;
+    }
+    .row.title-content-4 h3{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .row.yeucau-content-4{
+        margin: auto;
+    }
+    .col-sm-2.push-sm-4.btn-yeucau a{
+        margin-top: -86px;
+        margin-left: 160px;
+    }
+    .col-sm-5.footer-thanhtoan p{
+        padding-right:10px;
+    }
+    .col-sm-3.thongtin-footer{
+        padding-left: 125px;
+    }
+    .row.logo-footer-last{
+        margin-top: -76px;
+        margin-left: 260px;
+    }
+    .row.footer-last{
+        padding-left: 15px;
+    }
+
 }
